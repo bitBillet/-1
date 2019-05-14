@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание №1</title>
+    <style>
+        body{
+      display: flex;
+align-items: center;
+    }
+      form {
+        display: inline-block;
+        border: 1px solid grey;
+        padding: 10px;
+        margin: auto;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 1;
+      }
+      h3 {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+      }
+      input {
+        margin: 0;
+      }
+      .second {
+        padding-top: 15px;
+      }
+    </style>
+</head>
+
+<body>
+    <form action="" id="forma">
+        <h3>Первое число:</h3>
+        <input type="text" id="firstNumber" value="0.1">
+        <h3 class="second">Второе число:</h3>
+        <input type="text" id="secondNumber" value="0.2">
+        <p>
+            <button type="button" onclick="sum()">Сложить</button>
+        </p>
+    </form>
+    <script>
+    function sum() {
+        let value1 = document.getElementById('firstNumber').value,
+            value2 = document.getElementById('secondNumber').value,
+            sus = +value1 + +value2;
+        alert('Результат: \n\n' + +sus.toFixed(10));
+    }
+    </script>
+</body>
+
+</html>
